@@ -1,0 +1,151 @@
+/* not sure I need this section */
+a.nav_tight
+{
+ 	padding: 20px 2px;
+  height:60px;
+ 	width:90px;
+ 	text-align:center;
+}
+
+/* 
+** for location search box
+*/
+form.form_location
+{
+
+  width: 160px;
+}
+
+/*
+**general design 
+*/
+
+span.icon-upload
+{
+  margin-right:5px;
+}
+
+span.icon-user
+{
+  margin-right:5px;
+}
+
+ul > li
+{
+	padding-left: 0px !important;
+}
+
+.jetmenu > li > a > span
+{
+}
+
+span.input-group-addon 
+{
+	color:white;
+	background-color:#333;
+	border: 1px solid #333;
+}
+
+
+
+input.input_nav:forcus
+{
+	border-color:#333 !important;
+}
+
+/*
+input.inputbox.form-control.nav:hover
+{
+    background-color: white;
+    color:black;
+
+}
+
+
+.input-group.form-wrapper-01:hover
+{
+	background-color: white;
+    color:black;
+}
+*/
+.col1007
+{
+ width: 14.28%;
+ text-align:center;
+ float: left;
+}
+
+.col1002
+{
+  width: 50%;
+  text-align:center;
+  float:left;
+}
+
+.form-wrapper-01 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.form-wrapper-01 .inputbox {
+  	border-radius:3px;
+  	height: 20px;
+  	padding: 10px 0 10px 32px;
+  	width: 44%;
+  	outline:none;
+  	font-family: inherit;
+  	color:white;
+  	background-color:#333;
+  	border: 1px solid #333;
+}
+
+input:forcus 
+{
+    background: blue;
+    border-radius: 3px;
+    bottom: -60px;
+    color: white;
+    display: inline;
+    height: 30px;
+    left: 0;
+    line-height: 30px;
+    position: absolute;
+}
+
+.form-wrapper-01 a.button {
+  background: none repeat scroll 0 0 #14B9D5;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+
+.form-wrapper-01 a.button > i {
+  font-size:20px;
+}
+
+.nav_large
+{
+  display: none;
+}
+
+.nav_medium
+{
+  display: none;
+}
+
+.nav_small
+{
+  display: none;
+}
+
+ul
+{
+    list-style-type: none;
+    padding:0px;
+    margin:0px;
+}

@@ -1,0 +1,480 @@
+
+/* jetMenu CONFIGURATION
+**********************************************************/
+.custom_menu{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  float: left;
+  list-style: none;
+  background: #333333;
+}
+.custom_menu li{
+  float: left;
+}
+.custom_menu a{
+  -o-transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+  outline: none;
+  z-index: 10;
+}
+.custom_menu > li > a{
+  padding: 20px 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+}
+.custom_menu > li:hover > a,
+.custom_menu > li.active > a{
+  background: #02b8fa;
+  color: white;
+}
+
+/* DROPDOWN CONFIGURATION
+**********************************************************/
+.custom_menu ul.dropdown, 
+.custom_menu ul.dropdown li ul.dropdown {
+  list-style: none;
+    margin: 0;
+    padding: 0;   
+  display: none;
+    position: absolute;
+    z-index: 99;
+  min-width: 134px;
+  background: #333333;
+  width:100%;
+}
+.custom_menu ul.dropdown{
+    top: 60px;
+}
+
+.custom_menu li.nav_right
+{
+  float:right;
+}
+
+.custom_menu ul.dropdown li ul.dropdown{
+    left: 100%;
+  top: inherit;
+}
+.custom_menu ul.dropdown li{
+  clear:both;
+  width:100%;
+  font-size: 12px;
+  text-align:left;
+}
+.custom_menu ul.dropdown li a{
+  width:100%;
+  padding: 12px 24px 12px;
+  display:inline-block;
+  float:left;
+  clear:both;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: #999;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; 
+  -webkit-box-sizing:border-box;
+}
+
+li.nav_small_submenu ul.dropdown-sub div
+{
+  background-color: grey;
+}
+
+li.nav_small_submenu ul.dropdown-sub a 
+{
+  color:white;
+}
+
+/* dropdowns to left side */
+.custom_menu ul.dropdown li ul.dropdown.left{
+    left: auto;
+  right: 100%;
+}
+x
+
+/* SUBMENU INDICATORS
+**********************************************************/
+.custom_menu .indicator{
+  position: relative;
+  left: 5px;
+  top: 0;
+  font-size: 14px;
+  float: right;
+}
+.custom_menu ul li .indicator{
+  font-size: 12px;
+  top: 1px;
+  left: 10px;
+}
+
+/* .megamenu customization */
+
+/* MEGAMENU
+**********************************************************/
+.custom_menu > li > .megamenu{
+  position: absolute;
+  display: none;
+  background: #333333;
+  width: 25%;
+  top: 60px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #999;
+  z-index: 99;
+  padding: 20px 30px 20px;
+  border-top: 1px solid #000;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* megamenu list */
+.custom_menu li > .megamenu ul{
+  margin: 0 0 20px 0;
+  float: left;
+  padding: 0;
+  display: block;
+  position: relative;
+}
+.custom_menu li > .megamenu ul li{
+  width: 100%;
+  padding: 4px 0;
+}
+.custom_menu li > .megamenu ul li.title{
+  margin: 0 0 8px;
+  padding: 0 0 5px;
+  font-size: 14px;
+  border-bottom: solid 1px #666;
+}
+
+/* megamenu h5 */
+.custom_menu li > .megamenu h5{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* megamenu links */
+.custom_menu li > .megamenu a{
+  color: #999;
+  text-decoration: none;
+  font-size: 12px;
+  -webkit-transition: color 0.3s linear; 
+  -moz-transition: color 0.3s linear; 
+  -o-transition: color 0.3s linear; 
+  transition: color 0.3s linear; 
+}
+.custom_menu li > .megamenu a:hover{
+  color: #dedede;
+}
+
+/* megamenu images */
+.custom_menu  .megamenu img{
+  width: 100%;
+  -webkit-transition: border 0.3s linear; 
+  -moz-transition: border 0.3s linear;
+  -o-transition: border 0.3s linear;
+  transition: border 0.3s linear;
+}
+
+/* to fix right attribute on submenus (menu aligned to left (default)) */
+.custom_menu > li.fix-sub > .megamenu,
+.custom_menu > li.fix-sub > .megamenu.half-width,
+.custom_menu > li.fix-sub > .dropdown{
+  right: 0;
+}
+
+/* MEGAMENU WIDTHS
+**********************************************************/
+.custom_menu > li > .megamenu.half-width{
+  width: 50%;
+}
+.custom_menu > li > .megamenu.full-width{
+  width: 100%;
+  left: 0;
+}
+
+/* MEGAMENU FORM CONFIGURATION
+**********************************************************/
+.custom_menu li > .megamenu form{
+  width: 100%;
+}
+
+/* megamenu inputs */
+.custom_menu li > .megamenu form input[type="text"],
+.custom_menu li > .megamenu form textarea{
+  padding: 5px;
+  color: #999;
+  background: #444;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  border: solid 1px transparent;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border 0.3s linear; 
+  -moz-transition: border 0.3s linear;
+  -o-transition: border 0.3s linear;
+  transition: border 0.3s linear;
+}
+.custom_menu li > .megamenu form input[type="text"]:focus,
+.custom_menu li > .megamenu form textarea:focus{
+  border-color: #e0e0e0;
+}
+.custom_menu li > .megamenu form input[type="text"]{
+  width: 100%;
+  margin-top: 10px;
+}
+.custom_menu li > .megamenu form textarea{
+  width: 100%;
+  margin-top: 10px;
+}
+.custom_menu li > .megamenu form input[type="submit"]{
+  width: 25%;
+  float: right;
+  height: 30px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  background: #444;
+  color: #777;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-transition: background 0.3s linear; 
+  -moz-transition: background 0.3s linear; 
+  -o-transition: background 0.3s linear; 
+  transition: background 0.3s linear; 
+}
+.custom_menu li > .megamenu form input[type="submit"]:hover{
+  background: #e0e0e0;
+  color: #555;
+}
+
+/* MEGAMENU GRID SYSTEM
+**********************************************************/
+.megamenu .row{
+  width: 100%;
+  margin-top: 15px;
+}
+.megamenu .row:first-child {
+  margin-top: 0;
+}
+.megamenu .row:before,
+.megamenu .row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.megamenu .row:after {
+  clear: both;
+}
+.megamenu .row .col1,
+.megamenu .row .col2,
+.megamenu .row .col3,
+.megamenu .row .col4,
+.megamenu .row .col5,
+.megamenu .row .col6{
+  display: block;
+  width: 100%;
+  min-height: 20px;
+  float: left;
+  margin-left: 2.127659574468085%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.megamenu .row [class*="col"]:first-child {
+  margin-left: 0;
+}
+.megamenu .row .col1{
+  width: 14.893617021276595%;
+}
+.megamenu .row .col2{
+  width: 31.914893617021278%;
+}
+.megamenu .row .col3{
+  width: 48.93617021276595%;
+}
+.megamenu .row .col4{
+  width: 65.95744680851064%;
+}
+.megamenu .row .col5{
+  width: 82.97872340425532%;
+}
+.megamenu .row .col6{
+  width: 100%;
+}
+
+
+
+/* resonpsive column division */
+.col1007
+{
+ width: 14.28%;
+ float: left;
+}
+.col-small-context
+{
+  width: 64%;
+  text-align:center;
+  float:left;  
+}
+
+.col-small-location
+{
+  width: 35%;
+  text-align:center;
+  float:left;
+}
+
+.col1002
+{
+  width: 50%;
+  text-align:center;
+  float:left;
+}
+
+/* 
+** form related 
+*/
+form.form_location
+{
+
+  width: 160px;
+}
+
+.custom_menu > li > a > span
+{
+}
+
+span.input-group-addon 
+{
+  color:white;
+  background-color:#333;
+  border: 1px solid #333;
+}
+
+
+
+input.input_nav:forcus
+{
+  border-color:#333 !important;
+}
+
+.form-wrapper-01 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.form-wrapper-01 .inputbox {
+    border-radius:3px;
+    height: 20px;
+    padding: 10px 0 10px 32px;
+    width: 44%;
+    outline:none;
+    font-family: inherit;
+    color:white;
+    background-color:#333;
+    border: 1px solid #333;
+}
+
+.form-wrapper-01 a.button {
+  background: none repeat scroll 0 0 #14B9D5;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+
+.form-wrapper-01 a.button > i {
+  font-size:20px;
+}
+
+input:forcus 
+{
+    background: blue;
+    border-radius: 3px;
+    bottom: -60px;
+    color: white;
+    display: inline;
+    height: 30px;
+    left: 0;
+    line-height: 30px;
+    position: absolute;
+}
+
+
+
+/*
+**general design 
+*/
+
+
+ul > li
+{
+  padding-left: 0px !important;
+}
+
+
+/* not sure I need this section */
+ul > li > a > .tight
+{
+ 	padding: 24px 20px;
+  height:60px;
+ 	width:100px;
+ 	text-align:center;
+}
+
+.nav_large
+{
+  display: none;
+}
+
+.nav_medium
+{
+  display: none;
+}
+
+.nav_small
+{
+  display: none;
+}
+
+ul
+{
+    list-style-type: none;
+    padding:0px;
+    margin:0px;
+}
+
+ul > li
+{
+  display:inline;
+}
+
+.highlight
+{
+  color:white !important;
+}
+
+a.highlight:hover
+{
+  color:#02b8fa !important;
+}
+
+/*media query
+*/
+@media ( max-height: 600px ) { .dropdown { max-height:400px; overflow-y:scroll; } }
